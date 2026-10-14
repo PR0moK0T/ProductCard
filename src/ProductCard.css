@@ -1,0 +1,70 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  height: 380px;
+  padding: 16px;
+  border: 1px solid #101116;
+  border-radius: 12px;
+  background: #21222b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  border: 2px solid #101116;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Цена */
+.card span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.card button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.card button:hover {
+  background: #4338ca;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  margin-top: 10px;
+}
+
+.counter {
+  position: fixed;
+  text-align: center;
+  padding-left: 470px;
+}
